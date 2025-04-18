@@ -3,16 +3,22 @@ package com.hello.hello_spring.service;
 import com.hello.hello_spring.domain.Member;
 import com.hello.hello_spring.repository.MemberRepository;
 import com.hello.hello_spring.repository.MemoryMemberRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
+//@Service
+//@Component
 public class MemberService {
 //    private final MemberRepository memberRepository = new MemoryMemberRepository();
     // 테스트 코드에서 동일한 객체를 사용하기 위해
 
     private final MemberRepository memberRepository;
 
+//    @Autowired
     public MemberService(MemberRepository memberRepository) {
         // 외부에서 주입 받도록 변경
             // 테스트 코드를 위해

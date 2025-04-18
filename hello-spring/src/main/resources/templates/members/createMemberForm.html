@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>CreateMemberForm</title>
+</head>
+<body>
+
+<div class="container">
+
+    <form action="/members/new" method="post">
+        <div class="form-group">
+            <label for="name">이름</label>
+            <input type="text" id="name" name="name" placeholder="이름을 입력하세요">
+        </div>
+        <button type="submit">등록</button>
+    </form>
+    <!-- form 태그 : 값을 입력할 수 있는 태그-->
+    <!-- input 태그 : 입력을 받는 박스 태그 / name="name" 서버로 넘어올때 키가 됨 -->
+    <!-- 버튼을 누르면 action url에서 post 방식으로 서버로 넘어감 (@PostMapping쪽으로) -->
+
+</div>
+
+</body>
+</html>
